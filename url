@@ -1,0 +1,23 @@
+from gettext import install
+
+import pip
+import pyperclip as pyperclip
+import pyshorteners as pyshorteners
+
+import pyshorteners
+
+url = input('Enter the url: ')
+
+
+def shortenurl(url):
+    s = pyshorteners.Shortener()
+    print(s.tinyurl.short(url))
+
+shortenurl(input('shortner url is '(url)))
+
+
+output:- 
+enter url "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+url shortener will be    "https://tinyurl.com/2puhfj26"
+
+Process finished with exit code 0
